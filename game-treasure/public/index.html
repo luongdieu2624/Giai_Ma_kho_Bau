@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giải mã kho báu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      height: 100vh;
+    }
+    #game-info p {
+        white-space: nowrap; 
+        font-size: 16px; 
+        color: #f0f0f0; 
+        }
+    #game-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    #info-container {
+      width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      border-left: 2px solid #ccc;
+      overflow-y: auto;
+    }
+    #game-canvas {
+      border: 2px solid #333;
+    }
+    #decode-screen {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #333;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    #feedback {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    h1, h3 {
+      text-align: center;
+    }
+    #info-container h2 {
+      margin-top: 0;
+    }
+    #info-container p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <h1>Giải mã kho báu</h1>
+    <div id="game-info">
+    <p>
+        Cấp độ: <span id="level">1</span> |
+        Điểm: <span id="score">0</span> |
+        Thời gian: <span id="timer">00:00</span> |
+        Câu đố: <span id="current-puzzle">Thu thập gem để nhận câu đố</span>
+    </p>
+</div>
+    <div id="game-canvas"></div>
+  </div>
+  <div id="info-container">
+    <h2>Giới thiệu trò chơi</h2>
+    <p>"Giải mã kho báu" là một trò chơi phiêu lưu kết hợp giải đố. Người chơi điều khiển nhân vật thu thập các viên ngọc (gem) để nhận câu đố mã hóa. Mỗi câu đố yêu cầu bạn chọn đúng thuật toán (Caesar, Vigenère, RSA, hoặc AES) và giải mã thông điệp để ghi điểm.</p>
+    <h3>Cách chơi:</h3>
+    <ul>
+      <li>Sử dụng các phím mũi tên để di chuyển nhân vật.</li>
+      <li>Thu thập gem để nhận câu đố.</li>
+      <li>Giải mã câu đố bằng cách nhập đáp án đúng.</li>
+      <li>Đạt đủ điểm để mở cửa và tiến đến cấp độ tiếp theo.</li>
+      <li>Tránh kẻ thù và lava để không bị thua!</li>
+    </ul>
+    <h3>Tính điểm:</h3>
+    <p>Mỗi câu đố giải đúng được 10 điểm. Điểm yêu cầu để qua từng cấp độ:</p>
+    <ul>
+      <li>Cấp 1: 10 điểm</li>
+      <li>Cấp 2: 20 điểm</li>
+      <li>Cấp 3: 30 điểm</li>
+      <li>Cấp 4: 50 điểm</li>
+    </ul>
+    <h3>Thời gian:</h3>
+    <p>Thời gian được tính từ khi bắt đầu mỗi cấp độ. Hoàn thành cấp độ nhanh để thử thách bản thân!</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

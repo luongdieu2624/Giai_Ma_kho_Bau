@@ -1,0 +1,36 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "puzzles": [
+        { "question": "Hướng dẫn đầu tiên của bản đồ là gì?", "treasure": "treasure", "cipher_type": "caesar" },
+        { "question": "Chìa khóa cổ xưa nằm ở đâu?", "treasure": "cave", "cipher_type": "caesar" },
+        { "question": "Mật thư đầu tiên chỉ đến đâu?", "treasure": "forest", "cipher_type": "caesar" }
+      ]
+    },
+    {
+      "level": 2,
+      "puzzles": [
+        { "question": "Bí mật của hầm ngầm là gì?", "treasure": "gold", "cipher_type": "caesar" },
+        { "question": "Lối vào kho báu ở đâu?", "treasure": "cave", "cipher_type": "caesar" },
+        { "question": "Món đồ quý giá nhất là gì?", "treasure": "jewel", "cipher_type": "caesar" }
+      ]
+    },
+    {
+      "level": 3,
+      "puzzles": [
+        { "question": "Khóa bí mật của hòm kho báu là gì?", "treasure": "goldkey", "cipher_type": "rsa" },
+        { "question": "Vị trí chính xác của kho báu là đâu?", "treasure": "mountain", "cipher_type": "rsa" },
+        { "question": "Mật mã cuối cùng là gì?", "treasure": "diamond", "cipher_type": "rsa" }
+      ]
+    },
+    {
+      "level": 4,
+      "puzzles": [
+        { "question": "Kho báu cuối cùng chứa gì?", "treasure": "treasure", "cipher_type": "aes" },
+        { "question": "Bí mật của rương là gì?", "treasure": "ruby", "cipher_type": "aes" },
+        { "question": "Điểm đến cuối cùng là đâu?", "treasure": "temple", "cipher_type": "aes" }
+      ]
+    }
+  ]
+}
