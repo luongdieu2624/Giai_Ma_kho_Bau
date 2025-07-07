@@ -37,7 +37,6 @@ Mỗi câu đố mô phỏng một thuật toán mã hóa như: **Caesar Cipher*
 | Level 2  | Caesar Cipher      | 20 điểm        |
 | Level 3  | RSA (mô phỏng)     | 30 điểm        |
 | Level 4  | AES (mô phỏng)     | 50 điểm        |
-https://github.com/luongdieu2624/Giai_Ma_kho_Bau/blob/main/%E1%BA%A2nh/%E1%BA%A2nh1.png?raw=true
 > Thuật toán mã hóa Caesar được triển khai thực tế. RSA và AES được mô phỏng để thể hiện khái niệm học thuật.
 
 ---
